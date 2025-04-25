@@ -3,6 +3,7 @@
 
 #include "raylib.h"
 #include "raymath.h"
+#include "vector_graphic.h"
 
 typedef enum AsteroidSize {
     ASTEROID_SMALL = 1,
@@ -19,6 +20,7 @@ typedef enum AsteroidSize {
 #define ASTEROID_LIFETIME 10.0f
 
 typedef struct Asteroid {
+    Vector2* graphic;
     Vector2 position;
     Vector2 velocity;
     float rotation;
